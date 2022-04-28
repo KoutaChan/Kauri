@@ -12,6 +12,10 @@ public class TagsBuilder {
         return this;
     }
 
+    public boolean contains(String string) {
+        return tags.stream().anyMatch(str -> str.equals(string));
+    }
+
     public String build() {
         return String.join(", ", tags);
     }

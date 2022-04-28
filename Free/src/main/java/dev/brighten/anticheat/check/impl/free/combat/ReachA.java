@@ -37,7 +37,8 @@ public class ReachA extends Check {
     public void onUse(WrappedInUseEntityPacket packet) {
         reachA:
         {
-            if (data.playerInfo.creative
+            if (packet.getAction() == WrappedInUseEntityPacket.EnumEntityUseAction.ATTACK
+                    || data.playerInfo.creative
                     || data.target == null
                     || data.target.getUniqueId() != data.target.getUniqueId()
                     || data.targetPastLocation.previousLocations.size() < 10

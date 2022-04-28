@@ -32,7 +32,7 @@ public class InventoryA extends Check {
     }
 
     @Packet
-    public void onFlyng(WrappedInFlyingPacket packet) {
+    public void onFlying(WrappedInFlyingPacket packet) {
         if(packet.isPos()
                 && data.playerInfo.deltaXZ > 0
                 && data.playerInfo.liquidTimer.isPassed(2)
