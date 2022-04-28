@@ -249,8 +249,7 @@ public class BlockInformation {
                                         if(objectData.playerInfo.deltaY > 0
                                                 && objectData.playerVersion.isBelow(ProtocolVersion.V1_14)
                                                 && Materials.checkFlag(type, Materials.LADDER)
-                                                && normalBox.copy().expand(0.2f, 0, 0.2f)
-                                                .isCollided(blockBox)) {
+                                                && normalBox.copy().expand(0.6f, 0, 0.6f).isCollided(blockBox)) {
                                             onClimbable = true;
                                         }
 
