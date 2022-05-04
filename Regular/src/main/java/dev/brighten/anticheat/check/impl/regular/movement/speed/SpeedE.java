@@ -48,7 +48,7 @@ public class SpeedE extends Check {
                     && !data.blockInfo.onHalfBlock
                     && !data.playerInfo.generalCancel) {
                 vl++;
-                flag();
+                flag("accelerationXZ=%.3f deltaY=%.3f lastDeltaY=%.3f", accelerationXZ, deltaY, lastDeltaY);
             }
 
             this.lastX = x;
